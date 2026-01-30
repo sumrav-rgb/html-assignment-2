@@ -2,16 +2,307 @@
 <html>
     <head>
         <title> HTML Assignment 2 </title>
+        <link rel="stylesheet" href="stylesheet/mystyle.css" >
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery@4.0.0/dist/jquery.min.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js" crossorigin="anonymous"></script>
+      
         
     </head>
 
-    <body>
-<h1> welcome to our company page! </h1>
-<p>Here's what you need to do: </p>
-    </body>
+   <body id="top">
+
+
+    <!-- Header -->
+    <header>
+        <h1>Sweet Donut Shop </h1>
+        <p>Fresh Donuts Made Daily!</p>
+    </header>
+
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#services">Services</a>
+        <a href="#feedback">Customer Feedback</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- Main Container -->
+    <div class="container">
+
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <h2>About Our Shop</h2>
+            <div class="about-content">
+                <div class="image-hover-effect">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=500&h=350&fit=crop" alt="Fresh Donuts">
+                    <div class="image-overlay">
+                        <p>Fresh Every Morning!</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <p>Welcome to Sweet Donut Shop! We have been serving delicious, fresh donuts since 2010. Our shop is a family-owned business that takes pride in making every donut by hand.</p>
+                    <p>We wake up early every morning at 5 AM to bake fresh donuts for our customers. We use only the best ingredients like real butter, fresh eggs, and premium chocolate.</p>
+                    <p>Our goal is simple - to make you smile with every bite! Whether you like classic glazed donuts or want to try something new, we have something special for everyone.</p>
+                    <p>Come visit us and taste the difference that fresh, homemade donuts can make!</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Menu Section with Images -->
+        <section class="section" id="menu">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/glazed donut.jfif" alt="Glazed Donut">
+                        
+                    </div>
+                    <h3>Glazed Donut</h3>
+                    <p>Classic vanilla glazed donut, soft and sweet</p>
+                    <div class="price">$2.00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/chocolate donut.jfif" alt="Chocolate Donut">
+                       
+                    </div>
+                    <h3>Chocolate Donut</h3>
+                    <p>Rich chocolate with chocolate icing</p>
+                    <div class="price">$2.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/strawberry donut.jfif" alt="Strawberry Donut">
+                        
+                    </div>
+                    <h3>Strawberry Donut</h3>
+                    <p>Fresh strawberry filling with pink frosting</p>
+                    <div class="price">$2.50</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/maple donut.jfif" alt="Maple Donut">
+                       
+                    </div>
+                    <h3>Maple Donut</h3>
+                    <p>Sweet maple syrup glaze</p>
+                    <div class="price">$2.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/jelly donut.jfif" alt="Jelly Donut">
+                        
+                    </div>
+                    <h3>Jelly Donut</h3>
+                    <p>Filled with grape or strawberry jelly</p>
+                    <div class="price">$2.25</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-image">
+                        <img src="images/sprinkel donut.jfif" alt="Sprinkle Donut">
+                        
+                    </div>
+                    <h3>Sprinkle Donut</h3>
+                    <p>Colorful sprinkles on vanilla frosting</p>
+                    <div class="price">$2.00</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- New Interactive Gallery Section -->
+        <section class="section" id="gallery" align="center">
+            <h2>Our Donut Gallery</h2>
+            <p style="text-align: center; margin-bottom: 30px;"> </p>
+            <div class="gallery-grid">
+                <div class="gallery-item" data-title="Fresh Sprinklled Donu">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?w=400&h=300&fit=crop" alt="Fresh Sprinklled Donut">
+                    <div class="gallery-caption">Fresh Sprinklled Donut</div>
+                </div>
+                <div class="gallery-item" data-title="Fruite Mixed Paradise">
+                    <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=400&h=300&fit=crop" alt="Fruite Mixed Paradise">
+                    <div class="gallery-caption">Fruite Mixed Paradise</div>
+                </div>
+                <div class="gallery-item" data-title="Choco Cookies">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&h=300&fit=crop" alt="Choco Cookies">
+                    <div class="gallery-caption">Choco Cookies</div>
+                </div>
+                <div class="gallery-item" data-title="Morning Fresh Batch">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop" alt="Fresh Batch">
+                    <div class="gallery-caption">Morning Fresh Batch</div>
+                </div>
+                <div class="gallery-item" data-title="Party Box Special">
+                    <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&h=300&fit=crop" alt="Party Box Special">
+                    <div class="gallery-caption">Party Box Special</div>
+                </div>
+               
+            </div>
+        </section>
+
+
+        <!-- Services Section -->
+        <section class="section" id="services">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?w=150&h=150&fit=crop" alt="Fresh Baking">
+                    </div>
+                    <h3>Fresh Daily Baking</h3>
+                    <p>We bake fresh donuts every morning. All our donuts are made from scratch using traditional recipes. No frozen donuts here!</p>
+                    <p><strong>Hours:</strong> Monday - Sunday, 6:00 AM - 8:00 PM</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=150&h=150&fit=crop" alt="Custom Orders">
+                    </div>
+                    <h3>Custom Orders</h3>
+                    <p>Need donuts for a party or event? We can make custom orders! Just call us 2 days in advance and we'll prepare fresh donuts for your special day.</p>
+                    <p><strong>Minimum order:</strong> 24 donuts</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=150&h=150&fit=crop" alt="Coffee and Drinks">
+                    </div>
+                    <h3>Coffee & Drinks</h3>
+                    <p>Enjoy your donuts with our fresh coffee, tea, or cold milk. We serve hot and cold beverages to make your visit complete.</p>
+                    <p><strong>Combo deal:</strong> Donut + Coffee for $4.00</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">
+                        <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=150&h=150&fit=crop" alt="Birthday Specials">
+                    </div>
+                    <h3>Birthday Specials</h3>
+                    <p>Celebrating a birthday? We offer special birthday donut boxes with candles and custom decorations. Perfect for any age!</p>
+                    <p><strong>Starting at:</strong> $25.00 for 12 donuts</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Customer Feedback Section -->
+        <section class="section" id="feedback">
+            <h2>Customer Feedback</h2>
+            <div class="feedback-grid">
+                <div class="feedback-box">
+            
+                    <p>"Best donuts in town! I come here every weekend. The chocolate donut is my favorite. Fresh and delicious every time!"</p>
+                    <h4>- Sarah Johnson</h4>
+                </div>
+                <div class="feedback-box">
+                    
+                    <p>"Amazing service and great quality. I ordered donuts for my son's birthday party and everyone loved them. Highly recommend!"</p>
+                    <h4>- Michael Smith</h4>
+                </div>
+                <div class="feedback-box">
+                    
+                    <p>"The glazed donuts are perfect! Soft, sweet, and always fresh. This is my go-to place for morning treats."</p>
+                    <h4>- Emily Davis</h4>
+                </div>
+                <div class="feedback-box">
+                    
+                    <p>"I love the strawberry donuts! The staff is friendly and the shop is always clean. Great place for the whole family."</p>
+                    <h4>- John Martinez</h4>
+                </div>
+                <div class="feedback-box">
+                   
+                    <p>"Excellent donuts at great prices. The coffee combo deal is perfect for breakfast. I'm a regular customer now!"</p>
+                    <h4>- Lisa Anderson</h4>
+                </div>
+                <div class="feedback-box">
+                    
+                    <p>"Sweet Donut Shop never disappoints! Every donut tastes homemade and fresh. My kids absolutely love this place!"</p>
+                    <h4>- Robert Wilson</h4>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <h2>Contact Us</h2>
+            <p style="text-align: center; margin-bottom: 20px;">
+                Visit us at: 123 Main Street, Sweet Town<br>
+                Phone: (555) 123-4567<br>
+                Email: info@sweetdonutshop.com
+            </p>
+           
+            <div class="contact-form">
+                <h3 style="text-align: center; color: #8B4513; margin-bottom: 20px;">Send us a Message</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="error" id="nameError">Please enter your name</span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error" id="emailError">Please enter a valid email</span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error" id="phoneError">Please enter a valid phone number</span>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                        <span class="error" id="messageError">Please enter your message</span>
+                    </div>
+
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                   
+                    <div class="success-message" id="successMessage">
+                        Thank you! We will contact you soon.
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+    </div>
+
+
+    <!-- Image Modal/Lightbox -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sweet Donut Shop</p>
+        <p>Made with Love and Donuts</p>
+        <p>123 Main Street, Sweet Town | Phone: (555) 123-4567</p>
+        <a href="#top" class="go-to-top">Go to Top ↑</a>
+    </footer>
+
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    <!-- Link to JavaScript file -->
+    <script src="validation/script.js"></script>
+
+
+</body>
 
 </html>
